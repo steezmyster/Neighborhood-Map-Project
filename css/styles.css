@@ -1,0 +1,141 @@
+html,
+      body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: rgb(70, 70, 70);
+      }
+
+      .toggle-button:hover {
+        cursor: pointer;
+      }
+
+      .container {
+      	display: -webkit-flex;
+      	display: flex;
+      	-webkit-flex-flow: row wrap;
+      	flex-flow: row wrap;
+      	height: 100%;
+      	width: 100%;
+      }
+
+      .search, .list, .box, .footer {
+      	width: 100%;
+      }
+
+      .infopic {
+        width: 200px;
+        max-height: 200px;
+      }
+
+      #button {
+        position: relative;
+        float: left;
+        width: 80px;
+        height: 90px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        background: rgb(70, 70, 70);
+      }
+
+      #button2 {
+        position: relative;
+        float: right;
+        width: 20px;
+        height: 20px;
+        font-size: 30px;
+        margin-right: 10px;
+        text-align: center;
+        color: white;
+        background: rgb(70, 70, 70);
+      }
+
+      #menu {
+        position: absolute;
+        max-width: 250px;
+        width: 100%;
+        top: 0;
+        left: -400px;
+        height: 100%;
+        text-align: center;
+        color: white;
+      	background: rgb(70, 70, 70);
+      }
+
+      #map {
+      	height: 100%;
+      }
+
+      #searchbox {
+        width: 100%;
+        max-width: 220px;
+      }
+
+      .list-content:hover {
+        cursor: pointer;
+      }
+
+      .list-content {
+        text-align: left;
+        margin-bottom: 15px;
+        padding-right: 40px;
+
+      }
+
+      ul {
+        position: relative;
+      	list-style-type: none;
+      	text-align: left;
+      }
+
+      /*
+      Responsive Media Queries
+      */
+
+      /* Small devices */
+      @media (max-width: 700px) {
+        #menu {
+          position: absolute;
+          max-width: 450px;
+          width: 100%;
+          top: 0;
+          left: -1000px;
+          height: 100%;
+          text-align: center;
+          font-size: 40px;
+          color: white;
+          background: rgb(70, 70, 70);
+        }
+
+        #button {
+          position: relative;
+          float: left;
+          width: 100px;
+          height: 90px;
+          font-size: 40px;
+          text-align: center;
+          color: white;
+          background: rgb(70, 70, 70);
+        }
+
+        #button2 {
+          position: relative;
+          float: right;
+          width: 20px;
+          height: 20px;
+          font-size: 40px;
+          margin-right: 10px;
+          text-align: center;
+          color: white;
+          background: rgb(70, 70, 70);
+        }
+
+        #searchbox {
+          width: 95%;
+          font-size: 40px;
+          max-width: 720px;
+        }
+      }
