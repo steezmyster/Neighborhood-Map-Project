@@ -96,7 +96,7 @@
           	type:  "GET",
           	dataType: "json",
           	url: 'https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&nojsoncallback=1&format=json',
-            data: { api_key: '3ce0292610a9febb1700898c3c266ace', photo_id: place.flickrID },
+            data: { api_key: '717738739d4f8237f944f108fb54f963', photo_id: place.flickrID },
             aync: true,
             //Sets location url to flickr image url
           	success: function(data) {
@@ -191,3 +191,8 @@
 
       //initializes view model
       ko.applyBindings(new viewModel());
+
+      //Alerts user if google maps fails to load
+      function googleError() {
+    		alert('Google Failed');
+    	}
